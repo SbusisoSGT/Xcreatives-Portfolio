@@ -21,10 +21,10 @@ $(document).ready(function(){
 
 function showDropdown(){
     var dropdown = document.querySelector('.dropdown-container');
-    dropdown.style.display = 'block';
+    dropdown.style.height = "100%";
 } 
 
 function closeDropdown(){
     var dropdown = document.querySelector('.dropdown-container');
-    dropdown.style.display = 'none';
+    dropdown.style.height = "0";
 }

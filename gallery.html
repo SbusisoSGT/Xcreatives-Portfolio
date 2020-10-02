@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title>Gallery | Xcreatives </title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel="stylesheet" href="css/gallery.css">
 	<link rel="stylesheet" href="css/layouts/app.css">	
 	<script src="js/layouts/app.js"></script>
+	<script src="js/gallery.js"></script>
 	<link rel="icon" type="image/png" href="images/logo/Xcreatives.png">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<link href="css/fonts/font-awesome/font-awesome.min.css" rel="stylesheet">
@@ -21,8 +23,15 @@
 	<div class="overlay hide-element">
 		<i class="material-icons" id="close-icon">close</i>
 	</div>
-	<div class="full-artwork hide-element">
-		<img class="main-pic" src="images/portfolio/artwork17.jpeg">
+	<div class="full-artwork-container">
+		<div class="full-artwork-close">
+			<i class="fa fa-close" onclick="closeArtwork()"></i>
+		</div>
+		<div class="main-artwork-container">
+			<img class="main-pic" src="">
+		</div>
+		<div class="artwork-slideshow">
+		</div>
 	</div>
 	<nav class="dropdown-container">
 		<div class="dropdown-close">
@@ -50,27 +59,28 @@
 		<div class="gallery-container">
 			<h3 class="gallery-header">Gallery</h3>
 			<div class="gallery-pics">
-				<img class="artwork" src="images/portfolio/artwork1.jpeg">
-				<img class="artwork" src="images/portfolio/artwork11.jpeg">
-				<img class="artwork" src="images/portfolio/artwork22.jpeg">			
-				<img class="artwork" src="images/portfolio/artwork2.jpeg">
-				<img class="artwork" src="images/portfolio/artwork3.jpeg">
-				<img class="artwork" src="images/portfolio/artwork4.jpeg">
-				<img class="artwork" src="images/portfolio/artwork5.jpeg">
-				<img class="artwork" src="images/portfolio/artwork17.jpeg">
-				<img class="artwork" src="images/portfolio/artwork6.jpeg">
-				<img class="artwork" src="images/portfolio/artwork7.jpeg">
-				<img class="artwork" src="images/portfolio/artwork8.jpeg">
-				<img class="artwork" src="images/portfolio/artwork9.jpeg">
-				<img class="artwork" src="images/portfolio/artwork10.jpeg">
-				<img class="artwork" src="images/portfolio/artwork12.jpeg">
-				<img class="artwork" src="images/portfolio/artwork16.jpeg">
-				<img class="artwork" src="images/portfolio/artwork14.jpeg">
-				<img class="artwork" src="images/portfolio/artwork15.jpeg">
-				<img class="artwork" src="images/portfolio/artwork18.jpeg">
-				<img class="artwork" src="images/portfolio/artwork19.jpeg">
-				<img class="artwork" src="images/portfolio/artwork20.jpeg">
-				<img class="artwork" src="images/portfolio/artwork21.jpeg">
+				
+				<img class="artwork" src="images/portfolio/artwork11.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork1.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork22.jpeg" onclick="showArtwork(event)">			
+				<img class="artwork" src="images/portfolio/artwork2.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork3.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork4.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork5.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork17.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork6.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork7.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork8.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork9.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork10.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork12.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork16.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork14.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork15.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork18.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork19.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork20.jpeg" onclick="showArtwork(event)">
+				<img class="artwork" src="images/portfolio/artwork21.jpeg" onclick="showArtwork(event)">
 				
 			</div>
 		</div>
@@ -97,11 +107,11 @@
    		});
 
 
-		$('.artwork').click(function(){
-			$('.full-artwork').show();
-			// $('.overlay').show();
-			$('body').css('overflow', 'hidden');
-		});
+		// $('.artwork').click(function(){
+		// 	$('.full-artwork').show();
+		// 	// $('.overlay').show();
+		// 	$('body').css('overflow', 'hidden');
+		// });
 
 
 		$('.overlay').click(function(){

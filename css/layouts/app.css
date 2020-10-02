@@ -76,14 +76,12 @@
 
 	.dropdown-container{
 		position: fixed !important;
-		overflow-y: scroll;
-		display: none;
+		overflow-y: auto;
 		z-index: 3;
 		width: 100%;
-		height: 100%;
+		height: 0;
 		background: #101010;
-		box-shadow: -2px 9px 19px -4px rgba(80,80,80,1);
-		border-top: 1px solid #7A7A7A;
+		transition: 0.5s;
 	}
 
 	.dropdown-close{
@@ -91,6 +89,7 @@
 		flex-direction: row;
 		justify-content: flex-end;
 	}
+
 	.dropdown-close i{
 		align-self: right;
 		cursor: pointer;
