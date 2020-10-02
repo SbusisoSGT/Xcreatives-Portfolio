@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About| XCreatives</title>
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/layouts/app.css">	
+	<script src="js/layouts/app.js"></script>
+	<link rel="icon" type="image/png" href="images/logo/Xcreatives.png">
+	<link href="css/fonts/font-awesome/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+     <script href="js/jquery/jquery.min.js" rel="script"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Merienda|Kalam|Courgette|Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Piedra&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="overlay hide-element">
+		<i class="material-icons" id="close-icon">close</i>
+	</div>
+	<nav class="dropdown-container">
+		<div class="dropdown-close">
+			<i class="fa fa-close" onclick="closeDropdown()"></i>
+		</div>
+		<ul class="dropdown-links">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li id="active"><a href="about.html">ABOUT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+		<div class="dropdown-contact">
+			<a href="https://www.facebook.com/xcreatives" target="_blank"><i class='fab fa-facebook-f'></i></a>
+			<a href="mailto:xakaweboss@gmail.com"><i class="fas fa-envelope"></i></a>
+			<a href="tel:+27609368929"><i class="fab fa-whatsapp"></i></a>
+		</div>
+	</nav>
+	<nav class="nav">
+		<i id="menu-icon" class="material-icons" onclick="showDropdown()">menu</i>
+		<div class="logo">
+			<a href="index.html"><span class="logo-img">Xcreatives</span></a>
+		</div>
+	</nav>
+	<main class="content">
+		<div class="container-about">
+			<h3 class="about-header">About</h3>
+			<div class="about-content">
+				<div class="about-img">
+					<img src="images/portfolio/steve-img.jpeg">
+				</div>
+				<div class="about-info">
+					<p>Hy, My name is Steve Xakawe. I am a painter, sculptor and a sketch artist.</p>
+					<p>I am very passionate about my work, and my love for art drives me to continue creating beautiful artworks.</p>
+					<p>Please enjoy my gallery</p>   
+			</div>
+		</div>
+		<footer class="footer">
+			<span class="footer-text">Copyright &copy Xcreatives</span>
+		</footer>
+	</main>
+</body>
+</html>
+<script>
+	$(document).ready(function(){
+	var $dropMenu = $('.dropdown');
+	$('#menu-icon').click(function(event){
+       	event.preventDefault();
+       	if ($dropMenu.is(':hidden')){
+            $('.dropdown').slideDown();
+
+      	}else{
+            $('.dropdown').slideUp();
+       	}
+   	});
+
+
+	$('.overlay').click(function(){
+		$('.hide-element').hide();
+		$('body').css('overflow', 'scroll');
+	});
+});
+
+</script>
