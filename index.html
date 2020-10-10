@@ -5,7 +5,6 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/layouts/app.css">	
-	<script src="js/layouts/app.js"></script>
 	<link rel="icon" type="image/png" href="images/logo/Xcreatives.png">
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
      <script href="js/jquery/jquery.min.js" rel="script"></script>
@@ -21,26 +20,8 @@
 		<i class="material-icons" id="close-icon">close</i>
 	</div>
 	<nav class="dropdown-container">
-		<div class="dropdown-close">
-			<i class="fa fa-close" onclick="closeDropdown()"></i>
-		</div>
-		<ul class="dropdown-links">
-			<li id="active"><a href="index.html">HOME</a></li>
-			<li><a href="gallery.html">GALLERY</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="contact.html">CONTACT</a></li>
-		</ul>
-		<div class="dropdown-contact">
-			<a href="https://www.facebook.com/xcreatives" target="_blank"><i class='fab fa-facebook-f'></i></a>
-			<a href="mailto:xakaweboss@gmail.com"><i class="fas fa-envelope"></i></a>
-			<a href="tel:+27609368929"><i class="fab fa-whatsapp"></i></a>
-		</div>
 	</nav>
 	<nav class="nav">
-		<i id="menu-icon" class="material-icons" onclick="showDropdown()">menu</i>
-		<div class="logo">
-			<a href=""><span class="logo-img"><span id="">X</span>creatives</span></a>
-		</div>
 	</nav>
 	<main class="content">
 		<div class="cover">
@@ -55,25 +36,6 @@
 			</div>
 		</div>
 	</main>
+	<script src="js/layouts/app.js"></script>
 </body>
 </html>
-<script>
-	$(document).ready(function(){
-	var $dropMenu = $('.dropdown');
-	$('#menu-icon').click(function(event){
-       	event.preventDefault();
-       	if ($dropMenu.is(':hidden')){
-            $('.dropdown').slideDown();
-
-      	}else{
-            $('.dropdown').slideUp();
-       	}
-   	});
-
-
-	$('.overlay').click(function(){
-		$('.hide-element').hide();
-		$('body').css('overflow', 'scroll');
-	});
-});
-</script>
