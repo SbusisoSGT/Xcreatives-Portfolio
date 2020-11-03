@@ -22,7 +22,7 @@
 
 let nav_html = "<i id='menu-icon' class='material-icons' onclick='showDropdown()'>menu</i>";
 nav_html += "<div class='logo'>";
-nav_html += "<a href=''><span class='logo-img'>Xcreatives</span></a>";
+nav_html += "<a href='index.html'><span class='logo-img'>Xcreatives</span></a>";
 nav_html += "</div>";
 
 let dropdown_html = "<div class='dropdown-close'>";

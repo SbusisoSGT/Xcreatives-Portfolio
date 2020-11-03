@@ -32,6 +32,11 @@ function closeArtwork()
 	artwork_container.style.width = '0';
 }
 
+function slideUp()
+{
+	
+}
+
 // $('.artwork').click(function(){
 // 			$('.full-artwork').show();
 // 			// $('.overlay').show();

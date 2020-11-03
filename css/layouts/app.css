@@ -23,7 +23,7 @@
 	}
 
 	#menu-icon{
-		margin: 0px 0px 0px 10px;
+		margin: 0 0 .6rem .9rem;
 		font-size: 2.9rem;
 		height: 48px;
 		color: #000;
@@ -107,7 +107,6 @@
 	}
 
 	.dropdown-links{
-		/*border: 1px solid #FFF;*/
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -173,15 +172,13 @@
 /*			Footer UI 			*/
 
 	.footer{
-		margin-top: 30px;
-		
+		margin: 1rem 0 .5rem 0;
 		display: flex;
 		justify-content: center;
 	}
 
 	.footer-text{
 		font-size: .8rem;
-		color: #FFF;
 	}
 
 	a:hover{
@@ -189,4 +186,29 @@
 		color: #000 !important;
 		opacity: 1 !important;
 	}
+
+	@media only screen and (max-width: 576px){
+		.logo-img{
+			font-size: 2rem;
+		}
+
+		#menu-icon{
+			margin: .4rem 0 0 1rem;
+			font-size: 2.5rem;
+			height: 48px;
+		}
+
+		.dropdown-links{
+			margin: 1.5rem 0 2rem 0;
+		}
+
+		.dropdown-links li{
+			margin-top: 2rem;
+		}
+
+		.dropdown-contact{
+			margin: 2.5rem 0 2rem 0;
+		}
+	}
+
 
