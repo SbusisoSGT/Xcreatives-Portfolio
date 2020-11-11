@@ -187,6 +187,18 @@
 		opacity: 1 !important;
 	}
 
+	#ht {
+		color: #5CA7F7 !important;
+	}
+	
+	#ht:hover {
+		text-decoration: underline !important;
+	}
+
+	.fa-heart{
+		color: rgb(255, 11, 182);
+	}
+
 	@media only screen and (max-width: 576px){
 		.logo-img{
 			font-size: 2rem;

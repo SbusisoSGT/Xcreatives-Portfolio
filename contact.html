@@ -23,8 +23,9 @@
 -->
 <html>
 <head>
-	<title> Contact | Xcreatives</title>
+	<title> Contact &bull; Xcreatives</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name="author" content="7entHouse Tech">
 	<link rel="stylesheet" href="css/contact.css">
 	<link rel="stylesheet" href="css/layouts/app.css">	
 	<script src="js/layouts/app.js"></script>
@@ -69,20 +70,37 @@
 			<h3 class="contact-header">Contact</h3>
 			<div class="contact-content">
 				<div class="contact-form">
+					<h4 class="contact-form-header">Leave me a message</h4>
 					<form action="" method="POST">
-						<input type="text" class="form-input" name="name" placeholder="Full Name">
+						<input type="text" class="form-input" name="name" placeholder="Full Name" required>
 						<input type="email" class="form-input" name="email" placeholder="Email">
-						<textarea class="form-textarea" placeholder="Your message"></textarea>
-						<button type="submit" class="form-submit"> Submit <i class="far fa-paper-plane"></i></button>
+						<input type="text" class="form-input" name="numbers" placeholder="Mobile Numbers">
+						<textarea class="form-textarea" placeholder="Your message" required></textarea>
+						<button type="submit" class="form-submit"> Send <i class="far fa-paper-plane"></i></button>
 					</form>
 				</div>
 				<div class="contact-info">
+					<h4 class="contact-info-header">Get in touch</h4>
+					<div class="contact-info-details">
+						<div class="contact-detail">
+							<i class="fas fa-phone-alt contact-icon"></i> <p>(+27)76 132 7242</p>
+						</div>
+						<div class="contact-detail">
+							<i class="fas fa-envelope contact-icon"></i> <p>xakaweboss@gmail.com</p>
+						</div>
+						<div class="contact-detail">
+							<i class="fab fa-whatsapp contact-icon"></i> <p>(+27)60 936 8929</p> 							
+						</div>
+						<div class="contact-detail">
+							<i class="fas fa-map-marker-alt contact-icon"></i> <p>123 Block V<br/>Soshanguve<br/>0152</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</main>
 	<footer class="footer">
-		<span class="footer-text">Copyright &copy Xcreatives</span>
+		<span class="footer-text">Copyright &copy Xcreatives &bull; Designed with <i class='fas fa-heart'></i> by <a href="https://www.7entHouseTech.co.za/" id="ht" target="_blank">7entHouse Tech</a></span>
 	</footer>
 </body>
 </html>

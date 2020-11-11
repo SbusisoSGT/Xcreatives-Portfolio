@@ -78,6 +78,10 @@ html, body{
 	    height: 100%;
 	    z-index: 1;
 	}
+
+	footer{
+		display: none;
+	}
 	
 	@media only screen and (max-width: 576px){
 		.header{
@@ -98,3 +102,4 @@ html, body{
 			margin-top: 4rem;
 		}
 	}
+
