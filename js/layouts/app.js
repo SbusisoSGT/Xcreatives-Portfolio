@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function showDropdown(){
     var dropdown = document.querySelector('.dropdown-container');
     dropdown.style.height = "100%";
+
 } 
 
 function closeDropdown(){

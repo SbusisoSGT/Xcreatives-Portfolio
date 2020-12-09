@@ -1,6 +1,5 @@
 /*			Navbar UI 			*/
 
-
 	.overlay{
 		display: flex;
 		justify-content: flex-end;
@@ -76,7 +75,7 @@
 
 	.dropdown-container{
 		position: fixed !important;
-		overflow-y: auto;
+		overflow-y: hidden;
 		z-index: 3;
 		width: 100%;
 		height: 0;
@@ -192,11 +191,10 @@
 	}
 	
 	#ht:hover {
-		text-decoration: underline !important;
 	}
 
 	.fa-heart{
-		color: rgb(255, 11, 182);
+		color: #FF0BB6;
 	}
 
 	@media only screen and (max-width: 576px){
