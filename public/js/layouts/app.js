@@ -1,0 +1,9 @@
+const dropdown = document.querySelector(".dropdown-container");
+
+function showDropdown(){
+    dropdown.style.height = "100%";
+}
+
+function closeDropdown(){
+    dropdown.style.height = "0";
+}

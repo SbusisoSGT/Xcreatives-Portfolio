@@ -1,0 +1,1 @@
+function showArtwork(t){const e=t.target.attributes.src.value;document.querySelector(".main-pic").attributes.src.value=e,document.querySelector(".full-artwork-container").style.width="100%"}function closeArtwork(){document.querySelector(".full-artwork-container").style.width="0"}
