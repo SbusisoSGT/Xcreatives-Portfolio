@@ -1,7 +1,8 @@
 <?php
+	session_start();
 	require_once("../app/ContactController.php");
 
-	if($_SERVER['REQUEST_METHOD'] == "POST"){
+	if($_SERVER['REQUEST_METHOD'] == "POST" || isset($_POST['csrf'], $_SESSION['csrf']) || $_POST['csrf'] == $_SESSION['csrf']){
 		if(
 			!empty($_POST['fullName']) && 
 			!empty($_POST['email']) && 

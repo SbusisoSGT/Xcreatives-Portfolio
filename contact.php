@@ -1,5 +1,8 @@
+<?php
+	require_once("app/csrf.php");	
+	generateCsrfToken();
+?>
 <!DOCTYPE html>
-
 <!--
 	-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 	
@@ -26,14 +29,14 @@
 	<title> Contact &bull; Xcreatives</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta name="author" content="7entHouse Tech">
-	<link rel="stylesheet" href="public/css/contact.css">
-	<link rel="stylesheet" href="public/css/layouts/app.css">	
-	<script src="public/js/layouts/app.js"></script>
+	<link rel="stylesheet" href="public/css/contact-min.css">
+	<link rel="stylesheet" href="public/css/layouts/app-min.css">	
+	<script src="public/js/layouts/app-min.js"></script>
 	<link rel="icon" type="image/png" href="public/images/logo/Xcreatives.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Piedra&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -76,6 +79,7 @@
 							echo "<span class='contact-form-alert alert-danger'>".$_COOKIE['error']."</span>";
 					?>
 					<form action="api/sendContactQueries.php" method="POST">
+						<input type="hidden" name="csrf" value="<?php  echo $_SESSION['csrf']  ?>">
 						<input type="text" class="form-input" name="fullName" placeholder="Full Name" required>
 						<input type="email" class="form-input" name="email" placeholder="Email" required>
 						<input type="text" class="form-input" name="mobileNumbers" placeholder="Mobile Numbers" required>
@@ -87,7 +91,7 @@
 					<h4 class="contact-info-header">Get in touch</h4>
 					<div class="contact-info-details">
 						<div class="contact-detail">
-							<i class="fas fa-phone-alt contact-icon"></i> <p>(+27)76 132 7242</p>
+							<i class="fas fa-phone-alt contact-icon"></i> <p>(+27)60 936 8929</p>
 						</div>
 						<div class="contact-detail">
 							<i class="fas fa-envelope contact-icon"></i> <p>xakaweboss@gmail.com</p>

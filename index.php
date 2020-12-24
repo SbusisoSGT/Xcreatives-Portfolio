@@ -27,9 +27,9 @@
 	<title>Xcreatives</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta name="author" content="7entHouse Tech">
-	<link rel="stylesheet" href="public/css/index.css">
-	<link rel="stylesheet" href="public/css/layouts/app.css">	
-	<script src="public/js/layouts/app.js"></script>
+	<link rel="stylesheet" href="public/css/index-min.css">
+	<link rel="stylesheet" href="public/css/layouts/app-min.css">	
+	<script src="public/js/layouts/app-min.js"></script>
 	<link rel="icon" type="image/png" href="public/images/logo/Xcreatives.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>

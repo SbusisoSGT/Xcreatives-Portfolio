@@ -1,11 +1,13 @@
 <?php
+		
 
+		
 	class Database
 	{
-		private const SERVERNAME = "localhost";
-		private const USERNAME = "root";
-		private const PASSWORD = "";
-		private const DBNAME = "xcreatives";
+		private const HOST = 'localhost';
+		private const USERNAME = 'root';
+		private const PASSWORD = '';
+		private const DBNAME = 'xcreatives';
 		private $conn;
 		
 		/**
@@ -15,7 +17,7 @@
 		*/
 		public function __construct()
 		{
-			$this->conn = new mysqli(self::SERVERNAME, self::USERNAME, self::PASSWORD, self::DBNAME);
+			$this->conn = new mysqli(self::HOST, self::USERNAME, self::PASSWORD, self::DBNAME);
 		}
 		
 		/**

@@ -3,7 +3,7 @@
 
 function showArtwork(event)
 {
-	var artwork = event.target;
+	let artwork = event.target;
 
 	const src = artwork.attributes.src.value;
 	document.querySelector('.main-pic').attributes.src.value = src;
