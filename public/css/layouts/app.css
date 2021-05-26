@@ -170,31 +170,34 @@
 
 /*			Footer UI 			*/
 
-	.footer{
-		margin: 1rem 0 .5rem 0;
+	
+	.copyright {
 		display: flex;
+		flex-flow: row;
 		justify-content: center;
+		padding: 1rem 0;
+		margin-top: 2.9rem;
+		align-self: center;
 	}
 
-	.footer-text{
-		font-size: .8rem;
+	.copyright p {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		color: #000;
+		font-size: 1rem;
+	}
+	.copyright-dot {
+		margin: 0 0.3rem 0 0.5rem;
 	}
 
-	a:hover{
-		text-decoration: none;
-		color: #000 !important;
-		opacity: 1 !important;
+	.copyright i {
+		color: #f0f;
+		font-size: 1rem;
 	}
 
 	#ht {
-		color: #5CA7F7 !important;
-	}
-	
-	#ht:hover {
-	}
-
-	.fa-heart{
-		color: #FF0BB6;
+		color: #5ca7f7 !important;
 	}
 
 	@media only screen and (max-width: 576px){
@@ -218,6 +221,21 @@
 
 		.dropdown-contact{
 			margin: 2.5rem 0 2rem 0;
+		}
+		
+		
+		.copyright {
+			height: auto;
+		}
+		.copyright p {
+			flex-direction: column;
+		}
+
+		.copyright-designed-with{
+			margin: .5rem;
+		}
+		.copyright-dot {
+			display: none;
 		}
 	}
 

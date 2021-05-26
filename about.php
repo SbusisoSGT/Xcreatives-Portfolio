@@ -27,11 +27,11 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta name="author" content="7entHouse Tech">
 	<link rel="stylesheet" href="public/css/about-min.css">
-	<link rel="stylesheet" href="public/css/layouts/app-min.css">	
+	<link rel="stylesheet" href="public/css/layouts/app-min.css">		
 	<script src="public/js/layouts/app-min.js"></script>
 	<link rel="icon" type="image/png" href="public/images/logo/Xcreatives.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src='https://kit.fontawesome.com/3ef12e339b.js'></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Piedra&family=Special+Elite&display=swap" rel="stylesheet">
@@ -77,9 +77,14 @@
 			</div>
 		</div>
 		<footer class="footer">
-			<span class="footer-text">
-				Copyright &copy Xcreatives &bull; Designed with <i class='fas fa-heart'></i> by <span id="ht">7entHouse Tech</span>
-			</span>
+			<div class="copyright">
+				<p>
+					<span>Copyright &copy Xcreatives</span>
+					<span class="copyright-designed-with">
+						<span class="copyright-dot"> • </span> Designed with <i class='fas fa-heart'></i> by <span id="ht">7entHouse Tech</span>
+					</span>
+				</p>
+			</div>
 		</footer>
 	</main>
 </body>

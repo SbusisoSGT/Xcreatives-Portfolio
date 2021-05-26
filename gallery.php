@@ -33,9 +33,8 @@
 	<script src="public/js/layouts/app-min.js"></script>
 	<script src="public/js/gallery-min.js"></script>
 	<link rel="icon" type="image/png" href="public/images/logo/Xcreatives.png">
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src='https://kit.fontawesome.com/3ef12e339b.js'></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Piedra&family=Special+Elite&display=swap" rel="stylesheet">
@@ -84,6 +83,16 @@
 		<div class="gallery-container">
 			<h3 class="gallery-header">Gallery</h3>
 			<div class="gallery-pics">
+				<img class="artwork" src="public/images/portfolio/artwork29.jpg" onclick="showArtwork(event)">
+				<img class="artwork" src="public/images/portfolio/artwork30.jpg" onclick="showArtwork(event)">
+				<img class="artwork" src="public/images/portfolio/artwork31.jpg" onclick="showArtwork(event)">
+				
+				<img class="artwork" src="public/images/portfolio/artwork24.jpg" onclick="showArtwork(event)">
+				<img class="artwork" src="public/images/portfolio/artwork25.jpg" onclick="showArtwork(event)">
+				<img class="artwork" src="public/images/portfolio/artwork28.jpg" onclick="showArtwork(event)">
+				<img class="artwork" src="public/images/portfolio/artwork27.jpg" onclick="showArtwork(event)">
+				<img class="artwork" src="public/images/portfolio/artwork26.jpg" onclick="showArtwork(event)">
+				
 				<img class="artwork" src="public/images/portfolio/artwork11.jpeg" onclick="showArtwork(event)">
 				<img class="artwork" src="public/images/portfolio/artwork1.jpeg" onclick="showArtwork(event)">
 				<img class="artwork" src="public/images/portfolio/artwork22.jpeg" onclick="showArtwork(event)">			
@@ -109,9 +118,14 @@
 		</div>
 	</main>
 	<footer class="footer">
-		<span class="footer-text">
-			Copyright &copy Xcreatives &bull; Designed with <i class='fas fa-heart'></i> by <span id="ht">7entHouse Tech</span>
-		</span>
+		<div class="copyright">
+            <p>
+                <span>Copyright &copy Xcreatives</span>
+                <span class="copyright-designed-with">
+                    <span class="copyright-dot"> • </span> Designed with <i class='fas fa-heart'></i> by <span id="ht">7entHouse Tech</span>
+                </span>
+            </p>
+        </div>
 	</footer>
 </body>
 </html>

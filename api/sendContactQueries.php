@@ -25,7 +25,7 @@
 		}
 		
 		setcookie($name, $message, time() + 2, '/');
-		header("Location: http://localhost/xcreatives/contact.php");
+		header("Location: http://localhost/Xcreatives-portfolio/contact.php");
 	}else{
 		die("403 Forbidden!");
 	}
